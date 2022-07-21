@@ -56,8 +56,9 @@ def move_files(files):
             move(file, '{}/{}'.format(other_dir, file))
 
 with daemon.DaemonContext():
-    if __name__ == "__main__":
-        files = get_non_hidden_files_except_current_file(root_dir)
-        move_files(files)
+    while True:
+        if __name__ == "__main__":
+            files = get_non_hidden_files_except_current_file(root_dir)
+            move_files(files)
 
 
