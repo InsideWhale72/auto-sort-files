@@ -1,11 +1,11 @@
 # auto-sort-files
-
+WIP
 ## Python file automation
 ```
 automatically moves downloaded files from download folder into "/Downloaded-images, /Downloaded-videos, /Downloaded-docx, /Downloaded-excl"
 
 images with file names including TE at the end moved to "/Images-to-edit"
-.psd, .tif, .jpeg, .jpg, .png and . tif files with a file name ending in WIP moved to "/Work-in-progress" folder
+.psd, .tif, .jpeg, .jpg, .png, .tif, .tiff, .svg and .gif files with a file name ending in WIP moved to "/Work-in-progress" folder
 
 .psd, .tif, .jpeg, .jpg, .png and . tif files in "/Work-in-progress" and "/Images-to-edit" with file names not ending in WIP moved to "/Edited-images" folder
 ```
