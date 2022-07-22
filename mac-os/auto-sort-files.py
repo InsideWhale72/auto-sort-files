@@ -1,7 +1,8 @@
 import os
 from shutil import move
 import pathlib
-import daemon, time
+import daemon
+import time
 
 downloads_dir = pathlib.Path("~").expanduser() / "Downloads"
 user = os.getenv('USER')
@@ -60,5 +61,6 @@ with daemon.DaemonContext():
         if __name__ == "__main__":
             files = get_non_hidden_files_except_current_file(root_dir)
             move_files(files)
+            time.sleep(1)
 
 
