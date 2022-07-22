@@ -19,7 +19,7 @@ downloaded_images = '/Users/{}/Downloads/Downloaded-images/'.format(user)
 downloaded_videos = '/Users/{}/Downlaods/Downloaded-videos/'.format(user)
 downloaded_docx = '/Users/{}/Downlaods/Downloaded-docx/'.format(user)
 downloaded_excl = '/Users/{}/Downlaods/Downloaded-excl/'.format(user)
-other = '/Users/{}/Downlaods/Other'
+other = '/Users/{}/Downloads/Other'
 
 for f in (
     image_dir,
@@ -32,12 +32,12 @@ for f in (
 
 # file types
 
-doc_types = ('.doc', '.docx', '.txt')
-excl_types = ('.excl')
-img_types = ('.m1v', '.mpeg', '.mov', '.qt', '.mpa', '.mpg', '.mpe', '.avi', '.movie', '.mp4', '.HEIF' '.HEIC')
-video_types = ('.ras', '.xwd', '.bmp', '.jpe', '.jpg', '.jpeg', '.xpm', '.ief', '.pbm', '.tif', '.gif', '.ppm', '.xbm', '.tiff', '.rgb', '.pgm', '.png', '.pnm')
-wip = ('WIP')
-te = ('TE')
+doc_types = '.doc', '.docx', '.txt'
+excl_types = '.excl'
+img_types = '.m1v', '.mpeg', '.mov', '.qt', '.mpa', '.mpg', '.mpe', '.avi', '.movie', '.mp4', '.HEIF' '.HEIC'
+video_types = '.ras', '.xwd', '.bmp', '.jpe', '.jpg', '.jpeg', '.xpm', '.ief', '.pbm', '.tif', '.gif', '.ppm', '.xbm', '.tiff', '.rgb', '.pgm', '.png', '.pnm'
+wip = 'WIP'
+te = 'TE'
 
 def get_non_hidden_files_except_current_file(root_dir):
     return [f for f in os.listdir(root_dir) if os.path.isfile(f) and not f.startswith('.') and not f.__eq__(__file__)]
