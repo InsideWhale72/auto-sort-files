@@ -46,7 +46,7 @@ doc_types = '.doc', '.docx', '.txt'
 excl_types = '.excl'
 img_types = '.m1v', '.mpeg', '.mov', '.qt', '.mpa', '.mpg', '.mpe', '.avi', '.movie', '.mp4', '.HEIF' '.HEIC'
 video_types = '.ras', '.xwd', '.bmp', '.jpe', '.jpg', '.jpeg', '.xpm', '.ief', '.pbm', '.tif', '.gif', '.ppm', '.xbm', '.tiff', '.rgb', '.pgm', '.png', '.pnm'
-wip = 'WIP' img_types
+wip = 'WIP'
 te = 'TE'
 
 def get_non_hidden_files_except_current_file(root_dir):
